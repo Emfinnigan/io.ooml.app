@@ -872,11 +872,11 @@ p {
     width: 140px;
     height: 140px;
     border-radius: 32px;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     animation: float-logo 6s ease-in-out infinite;
     transition: transform 0.3s ease;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    border: none;
     display: block;
     object-fit: contain;
 }
@@ -1152,14 +1152,59 @@ blockquote footer {
     font-size: 0.9rem;
 }
 
+/* Screenshot Section */
+.screenshot-section {
+    padding: 120px 0;
+}
+
+.screenshot-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+}
+
+.app-screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Support Section */
+.support-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+}
+
+.support-section h4 {
+    font-family: var(--font-ui);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.support-section p {
+    color: var(--text-muted);
+}
+
+.support-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.support-section a:hover {
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .split-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-
-    .pricing-card {
-        padding: 2rem;
     }
 
     blockquote {
