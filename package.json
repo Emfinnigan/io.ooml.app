@@ -1,0 +1,20 @@
+{
+  "name": "ooml.io",
+  "version": "1.0.0",
+  "description": "The Offline Loom for macOS - Landing Page",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsc --watch",
+    "start": "http-server -p 3000 -o",
+    "serve": "http-server -p 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.3.3"
+  }
+}
+
