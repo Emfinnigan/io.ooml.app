@@ -1229,6 +1229,15 @@ blockquote footer {
     color: #fff;
 }
 
+.privacy-content h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    font-family: var(--font-ui);
+    font-weight: 600;
+}
+
 .footer-copyright a {
     color: var(--text-muted);
     text-decoration: none;
@@ -1281,6 +1290,10 @@ blockquote footer {
 
 .support-section a:hover {
     color: #fff;
+}
+
+.support-section a[href="support.html"] {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
