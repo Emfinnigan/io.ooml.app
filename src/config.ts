@@ -93,7 +93,7 @@ export const siteConfig: SiteConfig = {
   brand: {
     name: "ooml.io",
     tagline: "The Offline Loom for macOS",
-    logo: "logo.png"
+    logo: "assets/logo.png"
   },
 
   hero: {

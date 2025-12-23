@@ -23,5 +23,23 @@ class App {
 document.addEventListener('DOMContentLoaded', () => {
     const app = new App();
     app.init();
+    
+    // Handle video autoplay on scroll
+    const video = document.querySelector('.demo-video');
+    if (video) {
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.play().catch(() => {
+                        // Autoplay was prevented, ignore
+                    });
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        videoObserver.observe(video);
+    }
 });
 //# sourceMappingURL=main.js.map
